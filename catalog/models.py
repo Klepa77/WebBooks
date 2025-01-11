@@ -111,7 +111,7 @@ class Author(models.Model):
     photo = models.ImageField(upload_to='images',
                               help_text='Введите фото автора',
                               verbose_name='Фото автора',
-                              null=True , blank=True)
+                              null=True , blank=True, default='images/2.jpeg')
     def __str__(self):
         return self.last_name
 

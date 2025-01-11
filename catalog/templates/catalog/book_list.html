@@ -21,10 +21,10 @@
         <td>{{ book.display_author }}</td>
         <td>{{ book.genre }}</td>
         <td><img src="{{ book.photo.url }}" alt="connect"
-                    style="max-height:100px"></td>
+                 style="max-height:100px"></td>
         <td><a href="{{book.photo.url}}"
-                 class="btn btn-primary"
-            target="_blank">Показать</a></td>
+               class="btn btn-primary"
+               target="_blank">Показать</a></td>
     </tr>
     {% endfor %}
     </tbody>
