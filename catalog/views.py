@@ -21,6 +21,10 @@ class BookDetailView(DetailView):
     model = Book
     context_object_name = 'book'
 
+class AuthorDetailView(DetailView):
+    model = Author
+
+
 
 #
 #
@@ -53,3 +57,28 @@ def index(request):
                'authors': authors, 'num_authors': num_authors}
     # Передача словаря  context с данными в шаблон
     return render(request, 'catalog/index.html', context)
+
+def about(request):
+    text_head = "Сведения о компании"
+    name = "ООО Интелектуальные информационные системы"
+    rab1 = "Разработка приложений на основе"\
+            "систем исскуственного интеллекта"
+    rab2 = "Распознование обьектов дорожной инфраструктуры "
+    rab3 = 'Создание  графических  АРТ-объектов  на  основе' \
+         'систем  искусственного  интелпекта'
+    rab4 = "Создание  цифровых  интерактивных  книг,  учебных  пособий" \
+          "автоматизированных  обучающих систем"
+    context = {'tex_head': text_head, 'name': name, 'rab1': rab1,
+               'rab2': rab2,
+               'rab3': rab3,
+               'rab4': rab4}
+    return render(request, 'catalog/about.html', context)
+def contact(request):
+    text_head = "Контакты"
+    name = "ООО Интеллектуальные информационные системы"
+    address = "Москва, ул. Планерная, д.20, к.1 "
+    tel = "495-345-45-45"
+    email = "iiS_info@mail.ru"
+    context = {'tex_head': text_head, 'name': name, 'address': address,
+               'tel': tel, 'email': email}
+    return render(request, 'catalog/contact.html', context)
