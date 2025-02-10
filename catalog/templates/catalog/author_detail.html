@@ -1,21 +1,1 @@
-{% extends "catalog/base.html" %}
-{%  block content %}
-<div class="container text-start">
-    <div class="row my-2">
-        <h4>{{obj.first_name}} {{author.last_name}} </h4>
-        <p>Родился-{{author.date_of_birth}}</p>
-        <p>Фото(Портрет)</p>
-        <p><img src="{{ author.foto.url }}" alt="connect" style="max-height:
-         200px"></p>
-        <div class="row my-2">
-            <div class="col-2 my-2">
-                <a href="{{ author.foto.url }}"class="btn-primary"
-                target="">Показать</a>
-            </div>
-        </div>
-        <div class="row my-2">
-            {{author.about}}
-        </div>
-    </div>
-</div>
-{% endblock %}
+{% extends "catalog/base.html" %}{%  block content %}<div class="container text-start">    <div class="row my-2">        <h4>{{obj.first_name}} {{author.last_name}} </h4>        <p>Родился-{{author.date_of_birth}}</p>        <p>Фото(Портрет)</p>        <p><img src="{{ author.foto.url }}" alt="connect" style="max-height:         200px"></p>        <div class="row my-2">            <div class="col-2 my-2">                <a href="{{ author.foto.url }}"class="btn-primary"                target="">Показать</a>            </div>        </div>        <div class="row my-2">            {{author.about}}        </div>    </div></div>{% endblock %}

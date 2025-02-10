@@ -48,13 +48,17 @@ def index(request):
 
     authors = Author.objects
     num_authors = Author.objects.count()
+    #Число посещений этого view,подсчитанное в переменной session
+    num_visits = request.session.get( 'num_visits',0)
+    request.session['num_visits'] = num_visits+1
 
     # text_body = 'Это глвное содержимое главной страницы сайта 'text_body': text_body'
 
     # словарь для передачи данных  в шаблон index.html
     context = {'tex_head': text_head, 'books': books, 'num_books': num_book, 'num_instances': num_instances,
                'num_instances_available': num_instances_available,
-               'authors': authors, 'num_authors': num_authors}
+               'authors': authors, 'num_authors': num_authors,
+               'num_visits': num_visits}
     # Передача словаря  context с данными в шаблон
     return render(request, 'catalog/index.html', context)
 
