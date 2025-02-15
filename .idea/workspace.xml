@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58c8c352-6e70-4073-a864-89608ffec096" name="Changes" comment="создал шаблоны для сброса пароля,создал форму для отправки ссылки на новый пароль через почту.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="58c8c352-6e70-4073-a864-89608ffec096" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;WebBooks/settings.py&#10;#&#9;db.sqlite3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739615419891</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;WebBooks/settings.py&#10;#&#9;db.sqlite3">
+      <option name="closed" value="true" />
+      <created>1739615654019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739615654019</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
